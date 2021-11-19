@@ -15,8 +15,8 @@ passport.deserializeUser((user, done) => {
 var aT=''
 //stratergy
 passport.use(new FacebookStrategy({
-    clientID: "205745240882869", // Add your clientID
-    clientSecret: "47796ab5e693d968680fed4a9dc0a8ae", // Add the secret here
+    clientID: "", // Add your clientID
+    clientSecret: "", // Add the secret here
     callbackURL: 'https://153796a3fff7.ngrok.io/api/user/auth/facebook/callback'
     }, (accessToken, refreshToken, profile, done) => {
         
@@ -32,8 +32,8 @@ passport.use(new FacebookStrategy({
 
 
 passport.use(new GoogleStrategy({
-    clientID: "546171439852-ukje4dufvsl5gv49ntokhb3obf2qo1or.apps.googleusercontent.com", 
-    clientSecret: "wGo2cJ0c-ufPGnnOQWAuV6B4", 
+    clientID: "", 
+    clientSecret: "", 
     callbackURL: ' https://153796a3fff7.ngrok.io/api/user/auth/google/callback'
     }, (accessToken, refreshToken, profile, done) => {
         aT =accessToken
